@@ -27,7 +27,7 @@
 ┌─────────────────────────────────────────┐
 │              Internet                   │
 │  Web Servers · DNS Servers · Remote     │
-│  DNS:53 · HTTP:80 · HTTPS:443 · ICMP   │
+│  DNS:53 · HTTP:80 · HTTPS:443 · ICMP    │
 └──────────────────┬──────────────────────┘
                    │ all frames
                    ▼
@@ -118,6 +118,12 @@ nslookup google.com
 
 📸 *See `/screenshots/03-dns-query-packet.png` and `/screenshots/04-dns-response-a-record.png`*
 
+# <img width="2229" height="1254" alt="Wireshark packet capture and command prompt dns lookup" src="https://github.com/user-attachments/assets/c8094c30-c335-4fa8-9a9a-7f28f300cfa0" />
+
+
+# <img width="2229" height="1254" alt="Network Analysis with Wireshark and Command Prompt" src="https://github.com/user-attachments/assets/c174b737-a55b-4abc-8b7d-234124bc0d92" />
+
+
 **Real-world relevance:** Unexpected DNS queries to unusual domains in a capture are often the first indicator of malware communicating with a command and control server.
 
 ---
@@ -133,6 +139,12 @@ Navigated to `http://example.com` and applied `tcp and ip.addr == [example.com I
 | 3rd | ACK | Client: Confirmed. Ready to send data. |
 
 📸 *See `/screenshots/05-tcp-syn-synack-ack.png`*
+
+# <img width="2327" height="1304" alt="Network Traffic Analysis of a Web Application Login Page" src="https://github.com/user-attachments/assets/88d24f25-ae0f-44ff-884c-2da0e5b16768" />
+
+# <img width="2326" height="1303" alt="Network Analysis and Domain Lookup Tools" src="https://github.com/user-attachments/assets/f1fe59f0-fa78-4731-9a12-385cca90332e" />
+
+# <img width="2007" height="1304" alt="Network Traffic Analysis with Wireshark and Command Prompt" src="https://github.com/user-attachments/assets/0117fd25-4574-409b-a46d-ee8f9e4f7687" />
 
 **Real-world relevance:** SYN with no SYN-ACK = connection refused or server unreachable. RST packet = connection forcibly closed. These two patterns are the most common findings when diagnosing connectivity failures.
 
@@ -214,3 +226,4 @@ tshark -i eth0 -w capture.pcapng -c 1000
 ---
 
 *Part of an ongoing cybersecurity home lab series targeting SOC Analyst and Cloud Security Engineer roles.*
+
