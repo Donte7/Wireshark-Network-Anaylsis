@@ -156,6 +156,9 @@ Submitted a test login form over HTTP and applied `http.request.method == POST`.
 
 📸 *See `/screenshots/06-http-post-credentials.png`*
 
+# <img width="3812" height="2146" alt="Network Packet Analysis and Web Browser Login Page" src="https://github.com/user-attachments/assets/2ef83ad6-20e2-461f-8286-c5f0bc587a56" />
+
+
 > **Educational note:** This exercise demonstrates exactly why HTTPS is mandatory for any login form. Without TLS, credentials are readable by anyone on the network path — ISP, coffee shop router, or man-in-the-middle attacker.
 
 ---
@@ -168,6 +171,8 @@ Right-clicked an HTTP packet → **Follow → TCP Stream**. Wireshark reassemble
 - Blue text = server's response back to the browser
 
 📸 *See `/screenshots/07-tcp-stream-follow.png`*
+
+# <img width="3818" height="2156" alt="Wireshark Network Traffic Analysis and Web Login Interface" src="https://github.com/user-attachments/assets/78799f71-ccfb-4992-bd37-05f9012a79ee" />
 
 **Real-world relevance:** Individual packets are fragments. Stream view shows the complete conversation — what data was transferred, what commands were sent, what the server responded with. This is how incident responders reconstruct network events during an investigation.
 
